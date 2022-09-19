@@ -1,0 +1,994 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+    position:relative;
+
+}
+header{
+    padding: 0.5% 2%;
+    width: 100vw;
+    background-color: #C4170C;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    top: 0;
+    position:sticky;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.container1{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.container2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;/*Depois de aplicar flex-direction:column, usando o justify-content: center a div se moverá pra baixo*/
+    gap: 10px;
+}
+footer{
+    background-color: #C4170C;
+    color: white;
+    padding: 2% 2%;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.itemMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+.itensMenu{
+    background: white;
+    width: 20px;
+    height: 2px;
+}
+.search{
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 8px;
+    background-color: #A7140A;
+    font-weight: bolder;
+    color: white;
+}
+.divSearch{
+    color: white;
+}
+.g1{
+    font-weight: 100;
+    font-size: 2.4rem;
+}
+.propaganda{
+    padding: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.propaganda-container-2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.cssDestaque{
+    padding: 4%;
+    display: grid;
+    gap:15px;
+    grid-template-columns: 1fr 1fr;
+}
+.destaque1{
+    background-image: url("imgs/destaque/casal-alemao.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 1/43;
+}
+.destaque2{
+    background-image: url("imgs/destaque/anitta.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 1/21;
+}
+.destaque3{
+    background-image: url("imgs/destaque/filha-golpe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 21/43;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.div-noticia{
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    background-color: #F9F9F9;
+}
+.div-noticia-img{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.div-noticia-news{
+    color: #C4170C;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#vejaMais{
+    padding: 2.3%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #C4170C;
+    border-radius: 3%;
+    font-size: 100%;
+    cursor: pointer;
+}
+.oculta{
+    display: none;
+}
+#oculta-p2{
+    display: none;
+}
+.ViuIssoAqui{
+    border: 1px solid #0000002d;
+    padding: 3%;
+    border-radius: 2%;
+}
+.div-noticia2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.div-noticia2-titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ViuIssoAquiOculto{
+    display: none;
+}
+.mostarMais{
+    display: flex;
+    gap: 15px;
+    color: #C4170C;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 15px;
+}
+.mostarMais1{
+    display: none;
+    gap: 15px;
+    color: #C4170C;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 15px;
+}
+#seta{
+    padding: 8px;
+    box-shadow: -2px 2px 0 1px #C4170C inset;
+    border: solid transparent;
+    border-width: 0 0 0.5px 0.5px;
+    transform: rotate(45deg);
+}
+.propaganda{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.climaTempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid #0000002d;
+    border-radius: 2%;
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.itens{
+    background-color: aqua;
+    width: 45%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1{
+    background-image: url("./imgs/container-2/assunto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2{
+    background-image: url("./imgs/container-2/resumao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item3{
+    background-image: url("./imgs/container-2/funciona-assim.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item4{
+    background-image: url("./imgs/container-2/g1-ouviu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item5{
+    background-image: url("./imgs/container-2/educacao-financeira.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item6{
+    background-image: url("./imgs/container-2/de-onde-vem-o-que-eu-como.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item7{
+    background-image: url("./imgs/container-2/papo-de-politica.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item8{
+    background-image: url("./imgs/container-2/isso-e-fantastico.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item9{
+    background-image: url("./imgs/container-2/bem-estar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item10{
+    background-image: url("./imgs/container-2/desenrola-rio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item11{
+    background-image: url("./imgs/container-2/prazer-renata.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item12{
+    background-image: url("./imgs/container-2/bichos-na-escuta.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sld{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.slide{
+    display: flex;
+}
+.slide2{
+    display: none;
+}
+.setaSlide1{
+    padding: 5px;
+    box-shadow: -2px 2px 0 1px #0000006c;
+    border: solid transparent;
+    border-width: 0 0 0.5px 0.5px;
+    transform: rotate(45deg);
+    height: 5px;
+    width: 5px;
+}
+.setaSlide2{
+    padding: 5px;
+    box-shadow: -2px 2px 0 1px black;
+    border: solid transparent;
+    border-width: 0 0 0.5px 0.5px;
+    transform: rotate(225deg);
+    height: 5px;
+    width: 5px;
+}
+.footer-g1{
+    display: flex;
+    gap: 10px;
+}
+.div-autor{
+    display: flex;
+    justify-content: space-between;
+}
+.div-autor > ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.podcast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.pod{
+    width: 20px;
+}
+@media (max-width: 1024px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        padding: 0%;
+        width: 100%;
+    }
+    header{
+        padding: 1% 3%;
+        width: 100%;  
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        padding: 2% 5%;
+        width: 100%;
+        gap: 15px;
+    }
+    .search{
+        height: 60%;
+        width: 100px;
+        padding: 8px;
+    }
+    .g1{
+        font-size: 260%;
+    }
+    .propaganda-container-2{
+        padding: 3px;
+        width: 100%;
+    }
+    .container1{
+        width: 65%;
+    }
+    .container2{
+        width: 35%;
+    }
+    .div-noticia{
+        margin-top: 5px;
+        padding: 1% 1%;
+        width: 100%;
+    }
+    .div-noticia > a > div > img{
+        width: 100%;
+    }
+    .div-noticia > a > div{
+        width: 100%;
+    }
+    .div-noticia > a{
+        width: 50%;
+    }
+    .div-noticia-img > a > h2{
+        font-size: 16px;
+    }
+    .div-noticia-img > h4{
+        font-size: 13px;
+    }
+    .div-noticia-img{
+        gap: 7px;
+    }
+    #vejaMais{
+        padding: 2.1%;
+        width: 100%;
+    }
+    .sld{
+        width: 100%;
+        gap: 7px;
+    }
+    .slide{
+        width: 100%;
+    }
+    .slide-img > div > img{
+        width: 98%;
+    }
+    .mostarMais{
+        gap: 10px;
+        padding: 7px;
+    }
+    .mostarMais > h3{
+        font-size: 18px;
+    }
+    .slide > a > div > h4{
+        font-size: 13px;
+    }
+    .climaTempo > a{
+        display: flex;
+        justify-content: center;
+    }
+    .climaTempo > a > img{
+        width: 98%;
+        padding: 5px 0px;
+        border-radius: 5%;
+    }
+    hr{
+        width: 100%;
+    }
+    .ViuIssoAqui> hr{
+        width: 100%;
+    }
+    .div-autor > ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #seta{
+        padding: 8px;
+    }
+}
+@media (max-width: 768px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        padding: 0%;
+        width: 100%;
+    }
+    header{
+        padding: 2% 5%;
+        width: 100%;  
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        padding: 2% 5%;
+        width: 100%;
+        gap: 15px;
+    }
+    .menu-titulo{
+        display: none;
+    }
+    .search{
+        height: 60%;
+        width: 100px;
+        padding: 8px;
+    }
+    .g1{
+        font-size: 200%;
+    }
+    .propaganda{
+        display: none;
+    }
+    .propaganda-container-2{
+        padding: 5px;
+        width: 100%;
+    }
+    .cssDestaque{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .container1{
+        margin: auto;
+        width: 85%;
+    }
+    .container2{
+        margin: auto;
+        width: 85%;
+    }
+    .div-noticia{
+        display: block;
+        margin-top: 10px;
+        padding: 1% 1%;
+        width: 100%;
+    }
+    .div-noticia > a > div > img{
+        width: 100%;
+    }
+    .div-noticia-img > a > h2{
+        font-size: 18px;
+    }
+    .div-noticia-img > h4{
+        font-size: 15px;
+    }
+    .div-noticia-img{
+        gap: 10px;
+    }
+    #vejaMais{
+        padding: 2.1%;
+        width: 100%;
+    }
+    .sld{
+        width: 100%;
+        gap: 10px;
+    }
+    .slide{
+        width: 100%;
+    }
+    .slide-img > div > img{
+        width: 98%;
+    }
+    .mostarMais{
+        gap: 10px;
+        padding: 7px;
+    }
+    .mostarMais > h3{
+        font-size: 15px;
+    }
+    .slide > a > div > h4{
+        font-size: 13px;
+    }
+    .setaSlide1{
+        border-width: 0.1px;
+        padding: 3px;
+        height: 8px;
+        width: 8px;
+    }
+    .setaSlide2{
+        border-width: 0.1px;
+        padding: 3px;
+        height: 8px;
+        width: 8px;
+    }
+    .climaTempo > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .climaTempo > a > img{
+        width: 98%;
+        padding: 10px 0px;
+        border-radius: 5%;
+    }
+    hr{
+        width: 100%;
+    }
+    .ViuIssoAqui> hr{
+        width: 100%;
+    }
+    .div-autor > ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #seta{
+        padding: 8px;
+    }
+}
+@media (max-width: 425px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        padding: 0%;
+        width: 100%;
+    }
+    header{
+        padding: 2% 5%;
+        width: 100%;  
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        padding: 2% 5%;
+        width: 100%;
+        gap: 15px;
+    }
+    .menu-titulo{
+        display: none;
+    }
+    .search{
+        height: 50%;
+        width: 70px;
+        padding: 5px;
+    }
+    .g1{
+        font-size: 160%;
+    }
+    .propaganda{
+        display: none;
+    }
+    .propaganda-container-2{
+        padding: 5px;
+        width: 100%;
+    }
+    .cssDestaque{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #vejaMais{
+        padding: 2.1%;
+        width: 100%;
+    }
+    .container1{
+        width: 100%;
+    }
+    .div-noticia{
+        display: block;
+        margin-top: 10px;
+        padding: 1% 1%;
+        width: 100%;
+    }
+    .div-noticia > a > div > img{
+        width: 100%;
+    }
+    .container2{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .div-noticia-img > a > h2{
+        font-size: 18px;
+    }
+    .div-noticia-img > h4{
+        font-size: 15px;
+    }
+    .div-noticia-img{
+        gap: 10px;
+    }
+    .sld{
+        width: 100%;
+        gap: 10px;
+    }
+    .slide{
+        width: 100%;
+    }
+    .slide-img > div > img{
+        width: 98%;
+    }
+    .mostarMais{
+        gap: 10px;
+        padding: 7px;
+    }
+    .mostarMais > h3{
+        font-size: 15px;
+    }
+    .slide > a > div > h4{
+        font-size: 13px;
+    }
+    .setaSlide1{
+        border-width: 0.1px;
+        padding: 3px;
+        height: 8px;
+        width: 8px;
+    }
+    .setaSlide2{
+        border-width: 0.1px;
+        padding: 3px;
+        height: 8px;
+        width: 8px;
+    }
+    .climaTempo > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .climaTempo > a > img{
+        width: 98%;
+        padding: 10px 0px;
+        border-radius: 5%;
+    }
+    hr{
+        width: 100%;
+    }
+    .ViuIssoAqui> hr{
+        width: 100%;
+    }
+    .div-autor > ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #seta{
+        padding: 8px;
+    }
+}
+@media (max-width: 375px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        padding: 0%;
+        width: 100%;
+    }
+    header{
+        padding: 2% 5%;
+        width: 100%;  
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        padding: 2% 5%;
+        width: 100%;
+        gap: 15px;
+    }
+    .menu-titulo{
+        display: none;
+    }
+    .search{
+        height: 50%;
+        width: 70px;
+        padding: 5px;
+    }
+    .g1{
+        font-size: 160%;
+    }
+    .propaganda{
+        display: none;
+    }
+    .propaganda-container-2{
+        padding: 5px;
+        width: 100%;
+    }
+    .cssDestaque{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #vejaMais{
+        padding: 2.1%;
+        width: 100%;
+    }
+    .container1{
+        width: 100%;
+    }
+    .div-noticia{
+        display: block;
+        margin-top: 10px;
+        padding: 1% 1%;
+        width: 100%;
+    }
+    .div-noticia > a > div > img{
+        width: 100%;
+    }
+    .container2{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .div-noticia-img > a > h2{
+        font-size: 13px;
+    }
+    .div-noticia-img > h4{
+        font-size: 10px;
+    }
+    .div-noticia-img{
+        gap: 10px;
+    }
+    .sld{
+        width: 100%;
+        gap: 10px;
+    }
+    .slide{
+        width: 100%;
+    }
+    .slide-img > div > img{
+        width: 98%;
+    }
+    .mostarMais{
+        gap: 10px;
+        padding: 7px;
+    }
+    .mostarMais > h3{
+        font-size: 13px;
+    }
+    .slide > a > div > h4{
+        font-size: 13px;
+    }
+    .setaSlide1{
+        padding: 1px;
+        height: 5px;
+        width: 5px;
+    }
+    .setaSlide2{
+        padding: 1px;
+        height: 5px;
+        width: 5px;
+    }
+    .climaTempo > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .climaTempo > a > img{
+        width: 98%;
+        padding: 10px 0px;
+        border-radius: 5%;
+    }
+    hr{
+        width: 100%;
+    }
+    .ViuIssoAqui> hr{
+        width: 100%;
+    }
+    .div-autor > ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #seta{
+        padding: 8px;
+    }
+}
+@media (max-width: 320px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        padding: 0%;
+        width: 100%;
+    }
+    header{
+        padding: 2% 5%;
+        width: 103%;  
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        padding: 2% 5%;
+        width: 103%;
+        gap: 15px;
+    }
+    .menu-titulo{
+        display: none;
+    }
+    .search{
+        height: 50%;
+        width: 70px;
+        padding: 5px;
+    }
+    .g1{
+        font-size: 160%;
+    }
+    .propaganda{
+        display: none;
+    }
+    .propaganda-container-2{
+        padding: 5px;
+        width: 100%;
+    }
+    .cssDestaque{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #vejaMais{
+        padding: 2.1%;
+        width: 100%;
+    }
+    .container1{
+        width: 100%;
+    }
+    .div-noticia{
+        display: block;
+        margin-top: 10px;
+        padding: 1% 1%;
+        width: 100%;
+    }
+    .div-noticia > a > div > img{
+        width: 100%;
+    }
+    .container2{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .div-noticia-img > a > h2{
+        font-size: 13px;
+    }
+    .div-noticia-img > h4{
+        font-size: 10px;
+    }
+    .div-noticia-img{
+        gap: 10px;
+    }
+    .sld{
+        width: 100%;
+        gap: 10px;
+    }
+    .slide{
+        width: 100%;
+    }
+    .slide-img > div > img{
+        width: 98%;
+    }
+    .mostarMais{
+        gap: 10px;
+        padding: 7px;
+    }
+    .mostarMais > h3{
+        font-size: 13px;
+    }
+    .slide > a > div > h4{
+        font-size: 13px;
+    }
+    .setaSlide1{
+        padding: 1px;
+        height: 5px;
+        width: 5px;
+    }
+    .setaSlide2{
+        padding: 1px;
+        height: 5px;
+        width: 5px;
+    }
+    .climaTempo > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .climaTempo > a > img{
+        width: 98%;
+        padding: 10px 0px;
+        border-radius: 5%;
+    }
+    hr{
+        width: 100%;
+    }
+    .ViuIssoAqui> hr{
+        width: 100%;
+    }
+    .div-autor > ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #seta{
+        padding: 8px;
+    }
+}
+
