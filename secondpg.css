@@ -9,7 +9,7 @@ html{
     overflow-x: hidden;
 }
 .header2{
-    width: 102%;
+    width: 103%;
     background-color: #C4170C;
     display: flex;
     justify-content: space-between;
@@ -19,20 +19,20 @@ html{
 }
 #tema-titulo{
     font-size: 1.3rem;
+    font-weight: lighter;
 }
 .search{
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.4rem;
     border-radius: 10%;
     border: 1px solid transparent;
     background-color: #A7140A;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 .divSearch{
-    height: 18%;
-    width: 140px;
-    padding: 0.6rem;
-    border-radius: 10%;
+    height: 17%;
+    width: 120px;
+    border-radius: 8%;
     color: white;
 }
 .menu2{
@@ -65,7 +65,7 @@ html{
    font-size: 16px; 
 }
 main{
-    width: 102%;
+    width: 103%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,7 +219,7 @@ footer{
     gap: 20px;
     background-color: #C4170C;
     padding: 2% 3%;
-    width: 102%
+    width: 103%
 }
 .footer-g1{
     display: flex;
@@ -238,7 +238,7 @@ footer{
     color: white;
 }
 iframe{
-    width: 870px;
+    width: 710px;
     height: 315px;
 }
 hr{
@@ -620,7 +620,6 @@ table>caption{
     }
     #tema-titulo{
         font-size: 0.5rem;
-        font-weight: 100;
     }
     .divSearch{
         height: 18%;
