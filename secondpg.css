@@ -5,11 +5,14 @@
     text-decoration: none;  
     box-sizing: border-box; 
 }
-html{
+html{/*sempre adicionar "over-flow" em html e body*/
+    overflow-x: hidden;
+}
+body{/*sempre adicionar "over-flow" em body e html*/
     overflow-x: hidden;
 }
 .header2{
-    width: 103%;
+    width: 100%;
     background-color: #C4170C;
     display: flex;
     justify-content: space-between;
@@ -65,7 +68,7 @@ html{
    font-size: 16px; 
 }
 main{
-    width: 103%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +121,7 @@ main{
     justify-content: center;
 }
 .p-paragrafo{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.3rem;
 }
 .p-paragrafo>a{
@@ -238,7 +241,7 @@ footer{
     color: white;
 }
 iframe{
-    width: 710px;
+    width: 740px;
     height: 315px;
 }
 hr{
@@ -255,6 +258,7 @@ td{
 table>caption{
     color: black;
 }
+
 @media (max-width: 1024px){
     table{
         font-size: 100%;
@@ -290,7 +294,7 @@ table>caption{
     }
     .img-destaque{
         width: 80%;
-        height: 250px; 
+        height: 350px; 
         padding: 10px;
     }
     .img-destaque>img{
@@ -323,13 +327,13 @@ table>caption{
         height: 315px;
     }
     .header2{
-        padding: 0% 3%;
+        padding: 0% 1%;
     }
     main{
-        padding: 0% 4%;
+        padding: 0% 2%;
     }
     .g1{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .menu-titulo-2{
         display: none;
@@ -338,34 +342,34 @@ table>caption{
         display: none;
     }
     #tema-titulo{
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 100;
     }
     .divSearch{
         height: 18%;
-        width: 120px;
-        padding: 0.7rem;
+        width: 130px;
+        padding: 0.5rem;
     }
     .bar-list{
         display: none;
     }
     .propaganda{
         width: 100%;
-        height: 210px;
+        height: 230px;
     }
     .propaganda>a>img{
         width: 100%;
         height: 100%;
     }
     .div-titulo-noticia-secondpg{
-        width: 98%;
+        width: 100%;
     }
     .div-titulo-noticia-secondpg>h2{
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
     .img-destaque{
-        width: 90%;
-        height: 250px; 
+        width: 100%;
+        height: 300px; 
         padding: 10px;
     }
     .img-destaque>img{
@@ -388,7 +392,7 @@ table>caption{
         width: 50%;
     }
     footer{
-        padding: 3% 6%;
+        padding: 3% 5%;
     }
 }
 @media (max-width: 425px){
@@ -397,16 +401,16 @@ table>caption{
     }
     iframe{
         width: 425px;
-        height: 230px;
+        height: 235px;
     }
     .header2{
-        padding: 0% 3%;
+        padding: 0% 1%;
     }
     main{
-        padding: 0% 4%;
+        padding: 0% 1%;
     }
     .g1{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .menu-titulo-2{
         display: none;
@@ -420,7 +424,7 @@ table>caption{
     }
     .divSearch{
         height: 18%;
-        width: 110px;
+        width: 115px;
         padding: 0.7rem;
     }
     .bar-list{
@@ -442,7 +446,7 @@ table>caption{
     }
     .img-destaque{
         width: 100%;
-        height: 210px; 
+        height: 215px; 
         padding: 10px;
     }
     .img-destaque>img{
@@ -450,13 +454,13 @@ table>caption{
         height: 100%;
     }
     .div-texto-pos-img-secondpg{
-        margin-top: 10px;
+        margin-top: 5px;
         flex-direction: column;
         justify-content: center;
-        width: 98%;
+        width: 100%;
     }
     .texto-pos-foto-secondpg{
-        width: 98%;
+        width: 100%;
     }
     .texto-pos-foto-secondpg-2{
         width: 100%;
@@ -507,13 +511,13 @@ table>caption{
         height: 240px;
     }
     .header2{
-        padding: 0.2% 4%;
+        padding: 0.2% 2%;
     }
     main{
-        padding: 0% 4%;
+        padding: 0% 1%;
     }
     .g1{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
     .menu-titulo-2{
         display: none;
@@ -522,13 +526,12 @@ table>caption{
         display: none;
     }
     #tema-titulo{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         font-weight: 100;
     }
     .divSearch{
         height: 18%;
-        width: 90px;
-        padding: 0.6rem;
+        width: 110px;
     }
     .bar-list{
         display: none;
@@ -542,15 +545,15 @@ table>caption{
         height: 100%;
     }
     .div-titulo-noticia-secondpg{
-        width: 95%;
+        width: 98%;
     }
     .div-titulo-noticia-secondpg>h2{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     .img-destaque{
-        width: 98%;
-        height: 150px; 
-        padding: 10px;
+        width: 100%;
+        height: 170px; 
+        padding: 0px;
     }
     .img-destaque>img{
         width: 100%;
@@ -559,10 +562,10 @@ table>caption{
     .div-texto-pos-img-secondpg{
         margin-top: 10px;
         flex-direction: column;
-        width: 98%;
+        width: 100%;
     }
     .texto-pos-foto-secondpg{
-        width: 98%;
+        width: 100%;
     }
     .texto-pos-foto-secondpg-2{
         width: 100%;
@@ -581,7 +584,7 @@ table>caption{
         width: 100%;
     }
     .div-noticia-img>a>h2{
-        font-size: 16px;
+        font-size: 15px;
     }
     .div-noticia-img>h4{
         font-size: 12px;
@@ -589,10 +592,10 @@ table>caption{
     .galeria-de-bebida{
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     footer{
-        padding: 2% 4%;
+        padding: 3% 5%;
     }
 }
 @media (max-width: 320px){
@@ -604,7 +607,7 @@ table>caption{
         height: 230px;
     }
     .header2{
-        padding: 0.2% 4%;
+        padding: 0.2% 2.7%;
     }
     main{
         padding: 0% 4%;
@@ -623,7 +626,7 @@ table>caption{
     }
     .divSearch{
         height: 18%;
-        width: 90px;
+        width: 105px;
         padding: 0.6rem;
     }
     .bar-list{
@@ -638,10 +641,10 @@ table>caption{
         height: 100%;
     }
     .div-titulo-noticia-secondpg{
-        width: 95%;
+        width: 100%;
     }
     .div-titulo-noticia-secondpg>h2{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     .img-destaque{
         width: 100%;
@@ -689,5 +692,9 @@ table>caption{
     }
     footer{
         padding: 2% 4%;
+    }
+    .p-paragrafo{
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
