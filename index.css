@@ -6,30 +6,40 @@
     box-sizing: border-box;
 }
 html{
-    overflow-x: hidden;
+   
 }
 body{
-    height: 100vh;
     position:relative;
-
+    width: 100vw;
 }
 header{
-    padding: 0.5% 2%;
-    width: 100vw;
+    margin-bottom: 10px;
+    top: 0px;
+    position:sticky;
+    padding: 0.5% 1%;
+    width:100vw;
     background-color: #C4170C;
     display: flex;
     justify-content: space-between;
     color: white;
     align-items: center;
-    top: 0;
-    position:sticky;
 }
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     padding: 25px;
+}
+footer{
+    background-color: #C4170C;
+    color: white;
+    padding: 2% 2%;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .container{
     display: flex;
@@ -48,16 +58,6 @@ main{
     display: flex;
     flex-direction: column;/*Depois de aplicar flex-direction:column, usando o justify-content: center a div se moverá pra baixo*/
     gap: 10px;
-}
-footer{
-    background-color: #C4170C;
-    color: white;
-    padding: 2% 2%;
-    width: 100vw;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 .menu{
     display: flex;
@@ -212,7 +212,7 @@ a{
     padding: 15px;
 }
 #seta{
-    padding: 8px;
+    padding: 7px;
     box-shadow: -2px 2px 0 1px #C4170C inset;
     border: solid transparent;
     border-width: 0 0 0.5px 0.5px;
@@ -311,13 +311,13 @@ a{
     flex-direction: column;
     gap: 30px;
 }
-.slide{
+#slide1{
     display: flex;
 }
-.slide2{
+#slide2{
     display: none;
 }
-.setaSlide1{
+#setaSlide1{
     padding: 5px;
     box-shadow: -2px 2px 0 1px #0000006c;
     border: solid transparent;
@@ -326,7 +326,7 @@ a{
     height: 5px;
     width: 5px;
 }
-.setaSlide2{
+#setaSlide2{
     padding: 5px;
     box-shadow: -2px 2px 0 1px black;
     border: solid transparent;
@@ -359,24 +359,22 @@ a{
 .pod{
     width: 20px;
 }
+.div-ultima-propaganda{
+    position: relative;
+    height: 4500px;
+    background-attachment: fixed;
+}
+.ultima-propaganda{
+    position: sticky;
+    top: 0px;
+    
+}
 @media (max-width: 1024px){
-    html{
-        overflow-x: hidden;
-    }
-    body{
-        padding: 0%;
-        width: 100%;
-    }
     header{
-        padding: 1% 3%;
-        width: 100%;  
-    }
-    main{
-        width: 100%;
+        padding: 1% 3%; 
     }
     footer{
         padding: 2% 5%;
-        width: 100%;
         gap: 15px;
     }
     .search{
@@ -468,23 +466,11 @@ a{
     }
 }
 @media (max-width: 768px){
-    html{
-        overflow-x: hidden;
-    }
-    body{
-        padding: 0%;
-        width: 100%;
-    }
     header{
-        padding: 2% 5%;
-        width: 100%;  
-    }
-    main{
-        width: 100%;
+        padding: 2% 5%;  
     }
     footer{
         padding: 2% 5%;
-        width: 100%;
         gap: 15px;
     }
     .menu-titulo{
@@ -563,13 +549,13 @@ a{
     .slide > a > div > h4{
         font-size: 13px;
     }
-    .setaSlide1{
+    #setaSlide1{
         border-width: 0.1px;
         padding: 3px;
         height: 8px;
         width: 8px;
     }
-    .setaSlide2{
+    #setaSlide2{
         border-width: 0.1px;
         padding: 3px;
         height: 8px;
@@ -598,25 +584,16 @@ a{
     #seta{
         padding: 8px;
     }
+    .div-ultima-propaganda{
+        display: none;
+    }
 }
 @media (max-width: 425px){
-    html{
-        overflow-x: hidden;
-    }
-    body{
-        padding: 0%;
-        width: 100%;
-    }
     header{
-        padding: 2% 5%;
-        width: 100%;  
-    }
-    main{
-        width: 100%;
+        padding: 2% 5%; 
     }
     footer{
         padding: 2% 5%;
-        width: 100%;
         gap: 15px;
     }
     .menu-titulo{
@@ -695,13 +672,13 @@ a{
     .slide > a > div > h4{
         font-size: 13px;
     }
-    .setaSlide1{
+    #setaSlide1{
         border-width: 0.1px;
         padding: 3px;
         height: 8px;
         width: 8px;
     }
-    .setaSlide2{
+    #setaSlide2{
         border-width: 0.1px;
         padding: 3px;
         height: 8px;
@@ -730,15 +707,11 @@ a{
     #seta{
         padding: 8px;
     }
+    .div-ultima-propaganda{
+        display: none;
+    }
 }
 @media (max-width: 375px){
-    html{
-        overflow-x: hidden;
-    }
-    body{
-        padding: 0%;
-        width: 100%;
-    }
     header{
         padding: 2% 5%;
         width: 100%;  
@@ -827,12 +800,12 @@ a{
     .slide > a > div > h4{
         font-size: 13px;
     }
-    .setaSlide1{
+    #setaSlide1{
         padding: 1px;
         height: 5px;
         width: 5px;
     }
-    .setaSlide2{
+    #setaSlide2{
         padding: 1px;
         height: 5px;
         width: 5px;
@@ -862,9 +835,6 @@ a{
     }
 }
 @media (max-width: 320px){
-    html{
-        overflow-x: hidden;
-    }
     body{
         padding: 0%;
         width: 100%;
@@ -957,12 +927,12 @@ a{
     .slide > a > div > h4{
         font-size: 13px;
     }
-    .setaSlide1{
+    #setaSlide1{
         padding: 1px;
         height: 5px;
         width: 5px;
     }
-    .setaSlide2{
+    #setaSlide2{
         padding: 1px;
         height: 5px;
         width: 5px;
@@ -988,7 +958,9 @@ a{
         gap: 10px;
     }
     #seta{
-        padding: 8px;
+        width: 3px;
+        height: 3px;
+        padding: 5px;
     }
 }
 

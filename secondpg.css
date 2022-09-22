@@ -68,7 +68,7 @@ body{/*sempre adicionar "over-flow" em body e html*/
    font-size: 16px; 
 }
 main{
-    width: 100%;
+    width: 101%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@ main{
     margin: auto;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 101%;
     gap: 20px;
 }
 .propaganda{
@@ -222,7 +222,7 @@ footer{
     gap: 20px;
     background-color: #C4170C;
     padding: 2% 3%;
-    width: 103%
+    width: 101%
 }
 .footer-g1{
     display: flex;
@@ -610,7 +610,7 @@ table>caption{
         padding: 0.2% 2.7%;
     }
     main{
-        padding: 0% 4%;
+        padding: 0% 4.7%;
     }
     .g1{
         font-size: 1.4rem;
@@ -649,7 +649,7 @@ table>caption{
     .img-destaque{
         width: 100%;
         height: 150px; 
-        padding: 10px;
+        padding: 0px;
     }
     .img-destaque>img{
         width: 100%;
@@ -675,6 +675,7 @@ table>caption{
     .div-noticia-secondpg{
         flex-direction: column;
         width: 100%;
+        padding: 1% 0.5%;
     }
     .div-noticia-secondpg>a>div>img{
         width: 100%;
