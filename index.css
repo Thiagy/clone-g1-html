@@ -50,7 +50,6 @@ footer{
     width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 15px;
 }
 .container2{
@@ -161,7 +160,7 @@ a{
     flex-direction: column;
     gap: 15px;
 }
-#vejaMais{
+#vejaMais1{
     padding: 2.3%;
     display: flex;
     justify-content: center;
@@ -170,6 +169,39 @@ a{
     border-radius: 3%;
     font-size: 100%;
     cursor: pointer;
+}
+#vejaMais2{
+    padding: 2.3%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #C4170C;
+    border-radius: 3%;
+    font-size: 100%;
+    cursor: pointer;
+    display: none;
+}
+#vejaMais3{
+    padding: 2.3%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #C4170C;
+    border-radius: 3%;
+    font-size: 100%;
+    cursor: pointer;
+    display: none;
+}
+#vejaMais4{
+    padding: 2.3%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #C4170C;
+    border-radius: 3%;
+    font-size: 100%;
+    cursor: pointer;
+    display: none;
 }
 .oculta{
     display: none;
@@ -835,9 +867,13 @@ a{
     }
 }
 @media (max-width: 320px){
+    html{
+        overflow-x: hidden;
+    }
     body{
         padding: 0%;
         width: 100%;
+        overflow-x: hidden;
     }
     header{
         padding: 2% 5%;
@@ -928,12 +964,12 @@ a{
         font-size: 13px;
     }
     #setaSlide1{
-        padding: 1px;
+        padding: 2px;
         height: 5px;
         width: 5px;
     }
     #setaSlide2{
-        padding: 1px;
+        padding: 2px;
         height: 5px;
         width: 5px;
     }

@@ -1,7 +1,32 @@
-function vejaMais(){
+function vejaMais1(){
     var oculta = document.getElementsByClassName("oculta")[0]
-    var verMais = document.getElementById("vejaMais")
+    var verMais1 = document.getElementById("vejaMais1")
+    var verMais2 = document.getElementById("vejaMais2")
     oculta.style.display="block"
+    verMais1.style.display="none"
+    verMais2.style.display="flex"
+}
+function vejaMais2(){
+    var oculta = document.getElementsByClassName("oculta")[1]
+    var verMais2 = document.getElementById("vejaMais2")
+    var verMais3 = document.getElementById("vejaMais3")
+    oculta.style.display="block"
+    verMais2.style.display="none"
+    verMais3.style.display="flex"
+}
+function vejaMais3(){
+    var oculta = document.getElementsByClassName("oculta")[2]
+    var verMais3 = document.getElementById("vejaMais3")
+    var verMais4 = document.getElementById("vejaMais4")
+    oculta.style.display="block"
+    verMais3.style.display="none"
+    verMais4.style.display="flex"
+}
+function vejaMais4(){
+    var oculta = document.getElementsByClassName("oculta")[3]
+    var verMais4 = document.getElementById("vejaMais4")
+    oculta.style.display="block"
+    verMais4.style.display="none"
 }
 function mostrarMais1(){
     var ViuIssoAquiOculto = document.getElementsByClassName("ViuIssoAquiOculto")[0]
@@ -102,9 +127,23 @@ function vejaMaispg2(){
     oculta_p2.style.display="block"
     vejaMais_pg2.style.display="none"
 }
-function slide(){
+function slide1(){
+    var setaSlide1 =document.getElementById("setaSlide1")
+    var setaSlide2 =document.getElementById("setaSlide2")
     var slide1 = document.getElementById("slide1")
     var slide2 = document.getElementById("slide2")
     slide1.style.display='none'
     slide2.style.display='flex'
+    setaSlide2.style.boxShadow='-2px 2px 0 1px #0000006c'
+    setaSlide1.style.boxShadow='-2px 2px 0 1px black'
+}
+function slide2(){
+    var setaSlide1 =document.getElementById("setaSlide1")
+    var setaSlide2 =document.getElementById("setaSlide2")
+    var slide1 = document.getElementById("slide1")
+    var slide2 = document.getElementById("slide2")
+    slide1.style.display='flex'
+    slide2.style.display='none'
+    setaSlide2.style.boxShadow='-2px 2px 0 1px black'
+    setaSlide1.style.boxShadow='-2px 2px 0 1px #0000006c'
 }
