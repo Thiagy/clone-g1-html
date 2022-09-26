@@ -5,19 +5,17 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-html{
-   
-}
 body{
     position:relative;
     width: 100vw;
+    overflow-x: hidden;
 }
 header{
-    margin-bottom: 10px;
     top: 0px;
     position:sticky;
-    padding: 0.5% 1%;
-    width:100vw;
+    margin-bottom: 10px;
+    padding: 0.5% 3%;
+    width:101%;
     background-color: #C4170C;
     display: flex;
     justify-content: space-between;
@@ -79,8 +77,9 @@ footer{
     height: 2px;
 }
 .search{
-    height: 35px;
-    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    border-radius: 8%;
     border: 1px solid transparent;
     padding: 8px;
     background-color: #A7140A;
@@ -88,17 +87,29 @@ footer{
     color: white;
 }
 .divSearch{
+    height: 16%;
+    width: 12%;
+    border-radius: 8%;
     color: white;
 }
 .g1{
     font-weight: 100;
     font-size: 2.4rem;
 }
+.propaganda-destaque{
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
 .propaganda{
-    padding: 30px;
-    width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.propaganda-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .propaganda-container-2{
     width: 100vw;
@@ -107,11 +118,11 @@ footer{
 }
 .cssDestaque{
     padding: 4%;
-    display: grid;
+    display: none;
     gap:15px;
     grid-template-columns: 1fr 1fr;
 }
-.destaque1{
+#destaque1{
     background-image: url("imgs/destaque/casal-alemao.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +132,7 @@ footer{
     grid-column: 1/2;
     grid-row: 1/43;
 }
-.destaque2{
+#destaque2{
     background-image: url("imgs/destaque/anitta.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,8 +141,64 @@ footer{
     grid-column: 2/3;
     grid-row: 1/21;
 }
-.destaque3{
+#destaque3{
     background-image: url("imgs/destaque/filha-golpe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 21/43;
+}
+#destaque4{
+    background-image: url("imgs/destaque/live-alvorada.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 1/43;
+}
+#destaque5{
+    background-image: url("imgs/destaque/morte-no-rio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 1/21;
+}
+#destaque6{
+    background-image: url("imgs/destaque/golpe-mulheres-ricas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 21/43;
+}
+#destaque7{
+    background-image: url("imgs/destaque/giorgia-meloni.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 1/43;
+}
+#destaque8{
+    background-image: url("imgs/destaque/adiar-envelhecimento.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 1/21;
+}
+#destaque9{
+    background-image: url("imgs/destaque/boulos-confusao-mbl.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
@@ -250,11 +317,6 @@ a{
     border-width: 0 0 0.5px 0.5px;
     transform: rotate(45deg);
 }
-.propaganda{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 .climaTempo{
     display: flex;
     justify-content: center;
@@ -345,9 +407,11 @@ a{
 }
 #slide1{
     display: flex;
+    gap: 5px
 }
 #slide2{
     display: none;
+    gap: 5px
 }
 #setaSlide1{
     padding: 5px;
@@ -391,19 +455,9 @@ a{
 .pod{
     width: 20px;
 }
-.div-ultima-propaganda{
-    position: relative;
-    height: 4500px;
-    background-attachment: fixed;
-}
-.ultima-propaganda{
-    position: sticky;
-    top: 0px;
-    
-}
 @media (max-width: 1024px){
     header{
-        padding: 1% 3%; 
+        padding: 0.5% 1%; 
     }
     footer{
         padding: 2% 5%;
@@ -516,7 +570,7 @@ a{
     .g1{
         font-size: 200%;
     }
-    .propaganda{
+    .propaganda>a>img{
         display: none;
     }
     .propaganda-container-2{
@@ -622,7 +676,12 @@ a{
 }
 @media (max-width: 425px){
     header{
-        padding: 2% 5%; 
+        padding: 2% 2%; 
+        width:103%;
+    }
+    main{
+        width: 102%;
+        padding: 10px;
     }
     footer{
         padding: 2% 5%;
@@ -632,14 +691,17 @@ a{
         display: none;
     }
     .search{
-        height: 50%;
-        width: 70px;
-        padding: 5px;
+        height: 100%;
+        width: 100%;
+    }
+    .divSearch{
+        height: 30px;
+        width: 100px;
     }
     .g1{
         font-size: 160%;
     }
-    .propaganda{
+    .propaganda>a>img{
         display: none;
     }
     .propaganda-container-2{
@@ -745,11 +807,12 @@ a{
 }
 @media (max-width: 375px){
     header{
-        padding: 2% 5%;
+        padding: 2% 3%;
         width: 100%;  
     }
     main{
         width: 100%;
+        padding: 5px;
     }
     footer{
         padding: 2% 5%;
@@ -760,14 +823,17 @@ a{
         display: none;
     }
     .search{
-        height: 50%;
-        width: 70px;
-        padding: 5px;
+        height: 100%;
+        width: 100%;
+    }
+    .divSearch{
+        height: 30px;
+        width: 80px;
     }
     .g1{
         font-size: 160%;
     }
-    .propaganda{
+    .propaganda>a>img{
         display: none;
     }
     .propaganda-container-2{
@@ -876,62 +942,71 @@ a{
         overflow-x: hidden;
     }
     header{
-        padding: 2% 5%;
-        width: 103%;  
+        padding: 2% 2%;
+        width: 100%;  
     }
     main{
         width: 100%;
+        padding: 5px;
     }
     footer{
-        padding: 2% 5%;
-        width: 103%;
-        gap: 15px;
+        padding: 2% 2%;
+        width: 100%;
+        gap: 10px;
     }
     .menu-titulo{
         display: none;
     }
     .search{
-        height: 50%;
-        width: 70px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid transparent;
         padding: 5px;
+        background-color: #A7140A;
+        font-weight: bolder;
+        color: white;
+    }
+    .divSearch{
+        height: 30px;
+        width: 75px;
     }
     .g1{
         font-size: 160%;
     }
-    .propaganda{
+    .propaganda>a{
         display: none;
     }
     .propaganda-container-2{
         padding: 5px;
         width: 100%;
     }
-    .cssDestaque{
+    .cssDestaque>a{
+        display: none;
+    }
+    .propaganda-destaque>a>img{
         display: none;
     }
     .container{
         flex-direction: column;
         justify-content: center;
     }
-    #vejaMais{
-        padding: 2.1%;
-        width: 100%;
-    }
     .container1{
-        width: 100%;
-    }
-    .div-noticia{
-        display: block;
-        margin-top: 10px;
-        padding: 1% 1%;
-        width: 100%;
-    }
-    .div-noticia > a > div > img{
         width: 100%;
     }
     .container2{
         width: 100%;
     }
-    .container{
+    #vejaMais{
+        padding: 2.1%;
+        width: 100%;
+    }
+    .div-noticia{
+        display: block;
+        margin-top: 10px;
+        padding: 1% 0%;
+        width: 100%;
+    }
+    .div-noticia > a > div > img{
         width: 100%;
     }
     .div-noticia-img > a > h2{

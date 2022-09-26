@@ -147,3 +147,72 @@ function slide2(){
     setaSlide2.style.boxShadow='-2px 2px 0 1px black'
     setaSlide1.style.boxShadow='-2px 2px 0 1px #0000006c'
 }
+function propDestaque1(){
+    let propDestaque= document.getElementsByClassName("propaganda-destaque")
+    let cssDestaque= document.getElementsByClassName("cssDestaque")
+   
+    let data = new Date()
+    let segundos = data.getSeconds()
+    if(segundos<20){
+        cssDestaque[2].style.display='none'
+        cssDestaque[0].style.display='grid'
+    }else if(segundos<40){
+        cssDestaque[0].style.display='none'
+        cssDestaque[1].style.display='grid'   
+    }else if(segundos<60){
+        cssDestaque[1].style.display='none'
+        cssDestaque[2].style.display='grid'   
+    }
+    if(segundos<6){
+        propDestaque[10].style.display='flex'
+        propDestaque[19].style.display='none'
+        propDestaque[0].style.display='flex'
+        propDestaque[9].style.display='none'
+    }else if(segundos<12){
+        propDestaque[0].style.display='none'
+        propDestaque[1].style.display='flex'
+        propDestaque[10].style.display='none'
+        propDestaque[11].style.display='flex'
+    }else if(segundos<18){
+        propDestaque[1].style.display='none'
+        propDestaque[2].style.display='flex'
+        propDestaque[11].style.display='none'
+        propDestaque[12].style.display='flex'
+    }else if(segundos<24){
+        propDestaque[2].style.display='none'
+        propDestaque[3].style.display='flex'
+        propDestaque[12].style.display='none'
+        propDestaque[13].style.display='flex'
+    }else if(segundos<30){
+        propDestaque[3].style.display='none'
+        propDestaque[4].style.display='flex'
+        propDestaque[13].style.display='none'
+        propDestaque[14].style.display='flex'
+    }else if(segundos<36){
+        propDestaque[4].style.display='none'
+        propDestaque[5].style.display='flex'
+        propDestaque[14].style.display='none'
+        propDestaque[15].style.display='flex'
+    }else if(segundos<42){
+        propDestaque[5].style.display='none'
+        propDestaque[6].style.display='flex'
+        propDestaque[15].style.display='none'
+        propDestaque[16].style.display='flex'
+    }else if(segundos<48){
+        propDestaque[6].style.display='none'
+        propDestaque[7].style.display='flex'
+        propDestaque[16].style.display='none'
+        propDestaque[17].style.display='flex'
+    }else if(segundos<54){
+        propDestaque[7].style.display='none'
+        propDestaque[8].style.display='flex'
+        propDestaque[17].style.display='none'
+        propDestaque[18].style.display='flex'
+    }else if(segundos<60){
+        propDestaque[8].style.display='none'
+        propDestaque[9].style.display='flex'
+        propDestaque[18].style.display='none'
+        propDestaque[19].style.display='flex'
+    }
+}
+setInterval(propDestaque1, 500)
