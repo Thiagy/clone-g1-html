@@ -570,12 +570,12 @@ a{
     .g1{
         font-size: 200%;
     }
-    .propaganda>a>img{
-        display: none;
-    }
     .propaganda-container-2{
         padding: 5px;
         width: 100%;
+    }
+    .propaganda>a>img{
+        display: none;
     }
     .cssDestaque>a{
         display: none;
@@ -707,14 +707,10 @@ a{
     .propaganda>a>img{
         display: none;
     }
-    .propaganda-container-2{
-        padding: 5px;
-        width: 100%;
-    }
     .cssDestaque>a{
         display: none;
     }
-    .propaganda-destaque>a>img{
+    .propaganda-destaque>a{
         display: none;
     }
     .container{
@@ -723,6 +719,10 @@ a{
     }
     #vejaMais{
         padding: 2.1%;
+        width: 100%;
+    }
+    .propaganda-container-2{
+        padding: 5px;
         width: 100%;
     }
     .container1{
@@ -842,14 +842,11 @@ a{
     .propaganda>a>img{
         display: none;
     }
-    .propaganda-container-2{
-        padding: 5px;
-        width: 100%;
-    }
+    
     .cssDestaque>a{
         display: none;
     }
-    .propaganda-destaque>a>img{
+    .propaganda-destaque>a{
         display: none;
     }
     .container{
@@ -858,6 +855,10 @@ a{
     }
     #vejaMais{
         padding: 2.1%;
+        width: 100%;
+    }
+    .propaganda-container-2{
+        padding: 5px;
         width: 100%;
     }
     .container1{
