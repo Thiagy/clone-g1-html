@@ -577,7 +577,10 @@ a{
         padding: 5px;
         width: 100%;
     }
-    .cssDestaque{
+    .cssDestaque>a{
+        display: none;
+    }
+    .propaganda-destaque>a>img{
         display: none;
     }
     .container{
@@ -708,7 +711,10 @@ a{
         padding: 5px;
         width: 100%;
     }
-    .cssDestaque{
+    .cssDestaque>a{
+        display: none;
+    }
+    .propaganda-destaque>a>img{
         display: none;
     }
     .container{
@@ -840,7 +846,10 @@ a{
         padding: 5px;
         width: 100%;
     }
-    .cssDestaque{
+    .cssDestaque>a{
+        display: none;
+    }
+    .propaganda-destaque>a>img{
         display: none;
     }
     .container{
