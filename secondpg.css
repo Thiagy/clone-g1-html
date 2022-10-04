@@ -80,7 +80,6 @@ main{
     margin: auto;
     flex-direction: column;
     align-items: center;
-    width: 101%;
     gap: 20px;
 }
 .propaganda{
@@ -241,7 +240,7 @@ footer{
     color: white;
 }
 iframe{
-    width: 740px;
+    width: 840px;
     height: 315px;
 }
 hr{
@@ -258,7 +257,6 @@ td{
 table>caption{
     color: black;
 }
-
 @media (max-width: 1024px){
     table{
         font-size: 100%;
@@ -275,7 +273,7 @@ table>caption{
         font-weight: 100;
     }
     .propaganda{
-        width: 100%;
+        width: 90%;
         height: 210px;
     }
     .propaganda>a>img{
@@ -310,9 +308,10 @@ table>caption{
         width: 85%;
     }
     .galeria-de-bebida{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 0.6rem;
-        width: 50%;
+        width: 100%;
     }
     footer{
         padding: 3% 6%;
@@ -323,7 +322,7 @@ table>caption{
         font-size: 90%;
     }
     iframe{
-        width: 680px;
+        width: 700px;
         height: 315px;
     }
     .header2{
@@ -387,9 +386,10 @@ table>caption{
         width: 100%;
     }
     .galeria-de-bebida{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 0.6rem;
-        width: 50%;
+        width: 100%;
     }
     footer{
         padding: 3% 5%;
@@ -401,13 +401,16 @@ table>caption{
     }
     iframe{
         width: 425px;
-        height: 235px;
+        height: 260px;
     }
     .header2{
-        padding: 0% 1%;
+        padding: 0% 1.6%;
     }
     main{
-        padding: 0% 1%;
+        padding: 0%;
+    }
+    .container-1{
+        padding: 0%;
     }
     .g1{
         font-size: 2rem;
@@ -432,14 +435,15 @@ table>caption{
     }
     .propaganda{
         width: 100%;
-        height: 210px;
+        height: 170px;
     }
     .propaganda>a>img{
         width: 100%;
         height: 100%;
     }
     .div-titulo-noticia-secondpg{
-        width: 98%;
+        width: 100%;
+        padding: 0%;
     }
     .div-titulo-noticia-secondpg>h2{
         font-size: 1.9rem;
@@ -511,13 +515,13 @@ table>caption{
         height: 240px;
     }
     .header2{
-        padding: 0.2% 2%;
+        padding: 0.2% 1.8%;
     }
     main{
-        padding: 0% 1%;
+        padding: 0% 0.1%;
     }
     .g1{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .menu-titulo-2{
         display: none;
@@ -526,7 +530,7 @@ table>caption{
         display: none;
     }
     #tema-titulo{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         font-weight: 100;
     }
     .divSearch{
@@ -561,11 +565,13 @@ table>caption{
     }
     .div-texto-pos-img-secondpg{
         margin-top: 10px;
+        padding: 0% 0.1%;
         flex-direction: column;
         width: 100%;
     }
     .texto-pos-foto-secondpg{
         width: 100%;
+        padding: 0%;
     }
     .texto-pos-foto-secondpg-2{
         width: 100%;
@@ -607,10 +613,10 @@ table>caption{
         height: 230px;
     }
     .header2{
-        padding: 0.2% 2.7%;
+        padding: 0.2% 1.5%;
     }
     main{
-        padding: 0% 4.7%;
+        padding: 0% 0.8%;
     }
     .g1{
         font-size: 1.4rem;
@@ -641,6 +647,7 @@ table>caption{
         height: 100%;
     }
     .div-titulo-noticia-secondpg{
+        padding: 0%;
         width: 100%;
     }
     .div-titulo-noticia-secondpg>h2{

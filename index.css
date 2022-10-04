@@ -5,17 +5,15 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
 body{
     position:relative;
-    width: 100vw;
-    overflow-x: hidden;
 }
 header{
     top: 0px;
     position:sticky;
     margin-bottom: 10px;
-    padding: 0.5% 4%;
-    width:101%;
+    padding: 0.5% 1%;
     background-color: #C4170C;
     display: flex;
     justify-content: space-between;
@@ -25,15 +23,12 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    padding: 25px;
+    align-items: center;
 }
 footer{
     background-color: #C4170C;
     color: white;
     padding: 2% 2%;
-    width: 100vw;
     color: white;
     display: flex;
     flex-direction: column;
@@ -42,7 +37,8 @@ footer{
 .container{
     display: flex;
     gap: 10px;
-    width: 100%;
+    justify-content: center;
+    padding: 25px;
 }
 .container1{
     width: 65%;
@@ -64,12 +60,12 @@ footer{
     gap: 6px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    cursor: pointer;
 }
 .itemMenu{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    cursor: pointer;
 }
 .itensMenu{
     background: white;
@@ -227,48 +223,18 @@ a{
     flex-direction: column;
     gap: 15px;
 }
+.vejaMais{
+    padding: 2.3%;
+    display: none;
+    justify-content: center;
+    color: white;
+    background-color: #C4170C;
+    border-radius: 3%;
+    font-size: 100%;
+    cursor: pointer;
+}
 #vejaMais1{
-    padding: 2.3%;
     display: flex;
-    justify-content: center;
-    color: white;
-    background-color: #C4170C;
-    border-radius: 3%;
-    font-size: 100%;
-    cursor: pointer;
-}
-#vejaMais2{
-    padding: 2.3%;
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: #C4170C;
-    border-radius: 3%;
-    font-size: 100%;
-    cursor: pointer;
-    display: none;
-}
-#vejaMais3{
-    padding: 2.3%;
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: #C4170C;
-    border-radius: 3%;
-    font-size: 100%;
-    cursor: pointer;
-    display: none;
-}
-#vejaMais4{
-    padding: 2.3%;
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: #C4170C;
-    border-radius: 3%;
-    font-size: 100%;
-    cursor: pointer;
-    display: none;
 }
 .oculta{
     display: none;
@@ -482,15 +448,8 @@ a{
         width: 35%;
     }
     .div-noticia{
-        margin-top: 5px;
-        padding: 1% 1%;
-        width: 100%;
-    }
-    .div-noticia > a > div > img{
-        width: 100%;
-    }
-    .div-noticia > a > div{
-        width: 100%;
+        padding: 0.3%;
+        gap: 55px;
     }
     .div-noticia > a{
         width: 50%;
@@ -679,7 +638,7 @@ a{
 }
 @media (max-width: 425px){
     header{
-        padding: 2% 2%; 
+        padding: 2% 4%; 
         width:103%;
     }
     main{
@@ -813,16 +772,13 @@ a{
 }
 @media (max-width: 375px){
     header{
-        padding: 2% 3%;
-        width: 100%;  
+        padding: 2% 2%;  
     }
     main{
-        width: 100%;
         padding: 5px;
     }
     footer{
         padding: 2% 5%;
-        width: 100%;
         gap: 15px;
     }
     .menu-titulo{
@@ -842,7 +798,6 @@ a{
     .propaganda>a>img{
         display: none;
     }
-    
     .cssDestaque>a{
         display: none;
     }
@@ -943,25 +898,17 @@ a{
     }
 }
 @media (max-width: 320px){
-    html{
-        overflow-x: hidden;
-    }
     body{
         padding: 0%;
-        width: 100%;
-        overflow-x: hidden;
     }
     header{
-        padding: 2% 2%;
-        width: 100%;  
+        padding: 1% 1%; 
     }
     main{
-        width: 100%;
         padding: 5px;
     }
     footer{
-        padding: 2% 2%;
-        width: 100%;
+        padding: 2% 3%;
         gap: 10px;
     }
     .menu-titulo{
@@ -999,6 +946,7 @@ a{
     .container{
         flex-direction: column;
         justify-content: center;
+        padding: 0% 2%;
     }
     .container1{
         width: 100%;

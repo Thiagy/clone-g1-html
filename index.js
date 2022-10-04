@@ -1,32 +1,56 @@
 function vejaMais1(){
-    var oculta = document.getElementsByClassName("oculta")[0]
-    var verMais1 = document.getElementById("vejaMais1")
-    var verMais2 = document.getElementById("vejaMais2")
-    oculta.style.display="block"
-    verMais1.style.display="none"
-    verMais2.style.display="flex"
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[0].style.display='none'
+    verMais[1].style.display='flex'
+    oculta[0].style.display='block'
 }
 function vejaMais2(){
-    var oculta = document.getElementsByClassName("oculta")[1]
-    var verMais2 = document.getElementById("vejaMais2")
-    var verMais3 = document.getElementById("vejaMais3")
-    oculta.style.display="block"
-    verMais2.style.display="none"
-    verMais3.style.display="flex"
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[1].style.display='none'
+    verMais[2].style.display='flex'
+    oculta[1].style.display='block'
 }
 function vejaMais3(){
-    var oculta = document.getElementsByClassName("oculta")[2]
-    var verMais3 = document.getElementById("vejaMais3")
-    var verMais4 = document.getElementById("vejaMais4")
-    oculta.style.display="block"
-    verMais3.style.display="none"
-    verMais4.style.display="flex"
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[2].style.display='none'
+    verMais[3].style.display='flex'
+    oculta[2].style.display='block'
 }
 function vejaMais4(){
-    var oculta = document.getElementsByClassName("oculta")[3]
-    var verMais4 = document.getElementById("vejaMais4")
-    oculta.style.display="block"
-    verMais4.style.display="none"
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[3].style.display='none'
+    oculta[3].style.display='block'
+}
+function vejaMais5(){
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[4].style.display='none'
+    verMais[5].style.display='flex'
+    oculta[4].style.display='block'
+}
+function vejaMais6(){
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[5].style.display='none'
+    verMais[6].style.display='flex'
+    oculta[5].style.display='block'
+}
+function vejaMais7(){
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[6].style.display='none'
+    verMais[7].style.display='flex'
+    oculta[6].style.display='block'
+}
+function vejaMais8(){
+    var oculta = document.getElementsByClassName("oculta")
+    var verMais = document.getElementsByClassName("vejaMais")
+    verMais[7].style.display='none'
+    oculta[7].style.display='block'
 }
 function mostrarMais1(){
     var ViuIssoAquiOculto = document.getElementsByClassName("ViuIssoAquiOculto")[0]
@@ -150,9 +174,10 @@ function slide2(){
 function propDestaque1(){
     let propDestaque= document.getElementsByClassName("propaganda-destaque")
     let cssDestaque= document.getElementsByClassName("cssDestaque")
-   
+    let divNoticia = document.getElementsByClassName("div-noticia")
     let data = new Date()
     let segundos = data.getSeconds()
+    let index = 0
     if(segundos<20){
         cssDestaque[2].style.display='none'
         cssDestaque[0].style.display='grid'
@@ -164,10 +189,10 @@ function propDestaque1(){
         cssDestaque[2].style.display='grid'   
     }
     if(segundos<6){
-        propDestaque[10].style.display='flex'
         propDestaque[19].style.display='none'
-        propDestaque[0].style.display='flex'
+        propDestaque[10].style.display='flex'
         propDestaque[9].style.display='none'
+        propDestaque[0].style.display='flex'
     }else if(segundos<12){
         propDestaque[0].style.display='none'
         propDestaque[1].style.display='flex'
@@ -214,5 +239,6 @@ function propDestaque1(){
         propDestaque[18].style.display='none'
         propDestaque[19].style.display='flex'
     }
+   
 }
-setInterval(propDestaque1, 500)
+setInterval(propDestaque1, 2000)
