@@ -98,7 +98,7 @@ footer{
     width: 100%;
 }
 .propaganda{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
