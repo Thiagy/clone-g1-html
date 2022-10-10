@@ -5,7 +5,6 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
 body{
     position:relative;
 }
@@ -437,10 +436,6 @@ a{
     .g1{
         font-size: 260%;
     }
-    .propaganda-container-2{
-        padding: 3px;
-        width: 100%;
-    }
     .container1{
         width: 65%;
     }
@@ -528,13 +523,6 @@ a{
     }
     .g1{
         font-size: 200%;
-    }
-    .propaganda-container-2{
-        padding: 5px;
-        width: 100%;
-    }
-    .propaganda>a>img{
-        display: none;
     }
     .cssDestaque>a{
         display: none;
@@ -631,9 +619,6 @@ a{
     }
     #seta{
         padding: 8px;
-    }
-    .div-ultima-propaganda{
-        display: none;
     }
 }
 @media (max-width: 425px){
@@ -795,9 +780,6 @@ a{
     .g1{
         font-size: 160%;
     }
-    .propaganda>a>img{
-        display: none;
-    }
     .cssDestaque>a{
         display: none;
     }
@@ -810,10 +792,6 @@ a{
     }
     #vejaMais{
         padding: 2.1%;
-        width: 100%;
-    }
-    .propaganda-container-2{
-        padding: 5px;
         width: 100%;
     }
     .container1{
@@ -929,13 +907,6 @@ a{
     }
     .g1{
         font-size: 160%;
-    }
-    .propaganda>a{
-        
-    }
-    .propaganda-container-2{
-        padding: 5px;
-        width: 100%;
     }
     .cssDestaque>a{
         display: none;
